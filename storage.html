@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f8fc"><title>Kho riêng — Lưu trữ cá nhân</title>
+<style>
+:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#20243a;background:#f7f8fc;font-synthesis:none}*{box-sizing:border-box}body{margin:0}.app{display:grid;grid-template-columns:250px 1fr;min-height:100vh}.side{background:#fff;border-right:1px solid #e9eaf1;padding:28px 18px;display:flex;flex-direction:column;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:19px;letter-spacing:-.5px}.logo{display:grid;place-items:center;background:#6558e8;color:#fff;width:38px;height:38px;border-radius:13px;font-size:20px}.nav{display:grid;gap:7px}.nav button,.folderbtn{border:0;background:transparent;text-align:left;padding:12px;border-radius:11px;color:#656b80;cursor:pointer;font:inherit}.nav button.active,.nav button:hover{background:#f0efff;color:#5548d9;font-weight:650}.side-note{margin-top:auto;color:#9297a9;font-size:12px;line-height:1.6}.main{padding:34px clamp(18px,4vw,54px);min-width:0;max-width:1500px;width:100%;margin:auto}.top{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}.eyebrow{font-size:12px;color:#8b90a3;font-weight:700;text-transform:uppercase;letter-spacing:1.4px}.h1{font-size:clamp(27px,4vw,36px);letter-spacing:-1.2px;margin:7px 0}.sub{color:#858a9c;margin:0}.actions{display:flex;gap:9px;flex-wrap:wrap}.btn{border:1px solid #e3e5ef;background:#fff;border-radius:11px;padding:11px 15px;font:inherit;font-size:13px;font-weight:650;cursor:pointer;color:#484d61}.btn.primary{background:#6558e8;color:#fff;border-color:#6558e8}.btn:hover{filter:brightness(.97);transform:translateY(-1px)}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:28px 0}.stat{background:#fff;border:1px solid #ececf3;border-radius:16px;padding:18px}.stat-label{font-size:12px;color:#858a9c}.stat-value{font-size:25px;font-weight:760;letter-spacing:-.8px;margin-top:8px}.stat-icon{float:right;background:#f0efff;color:#6558e8;border-radius:10px;padding:9px}.toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin:28px 0 17px}.crumb{font-weight:750;font-size:19px}.search{border:1px solid #e5e6ef;background:#fff;border-radius:11px;padding:11px 14px;min-width:min(260px,100%);font:inherit;outline-color:#8177ef}.drop{border:1.5px dashed #d6d4f5;background:#f2f1ff;border-radius:16px;padding:18px;display:flex;align-items:center;gap:14px;margin-bottom:22px;color:#6d64c9}.drop strong{color:#4f46bb}.drop.drag{background:#e8e6ff;border-color:#6558e8}.drop .hint{font-size:12px;color:#8882ca;margin-top:3px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:15px}.item{background:#fff;border:1px solid #e9eaf2;border-radius:15px;overflow:hidden;min-width:0;transition:.15s}.item:hover{border-color:#d3d0fa;box-shadow:0 8px 22px #26204b0a}.preview{height:142px;background:#f1f2f8;display:grid;place-items:center;overflow:hidden;position:relative}.preview img,.preview video{width:100%;height:100%;object-fit:cover}.filetype{font-size:37px;color:#7168df}.foldertype{font-size:37px;color:#e6b64b}.itembody{padding:12px}.filename{font-weight:680;font-size:13px;overflow-wrap:anywhere;line-height:1.45;min-height:36px}.meta{font-size:11px;color:#9297a7;margin-top:6px}.itemactions{display:flex;gap:7px;margin-top:12px}.smallbtn{border:1px solid #e8e9f1;background:#fff;border-radius:8px;padding:7px 9px;cursor:pointer;font-size:12px;color:#555b70}.smallbtn.del{color:#c54b58}.empty{grid-column:1/-1;text-align:center;padding:55px 15px;color:#9297a7;background:#fff;border:1px dashed #e0e2ec;border-radius:16px}.empty .big{font-size:34px;margin-bottom:12px}.footer{font-size:12px;color:#999daf;margin-top:30px;line-height:1.6}.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:#24243a;color:white;padding:12px 18px;border-radius:12px;font-size:13px;box-shadow:0 8px 30px #0002;z-index:5;max-width:90vw}.hidden{display:none!important}dialog{border:0;border-radius:18px;padding:24px;width:min(420px,calc(100% - 30px));box-shadow:0 25px 80px #1a183333}dialog::backdrop{background:#19192d77}dialog h3{margin:0 0 8px}dialog p{font-size:13px;color:#777c90}dialog input{width:100%;padding:12px;border:1px solid #dddfea;border-radius:10px;font:inherit;margin:8px 0 15px}.dialog-actions{display:flex;justify-content:flex-end;gap:8px}@media(max-width:700px){.app{grid-template-columns:1fr}.side{padding:14px 16px;border-right:0;border-bottom:1px solid #e9eaf1;gap:12px}.side-note{display:none}.nav{grid-template-columns:repeat(3,1fr)}.nav button{text-align:center;padding:9px 5px;font-size:12px}.main{padding:24px 16px}.stats{gap:8px}.stat{padding:12px}.stat-value{font-size:20px}.stat-icon{display:none}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.preview{height:115px}.itembody{padding:10px}.actions .btn{padding:10px}.drop{align-items:flex-start}}
+</style></head>
+<body><div class="app">
+<aside class="side"><div class="brand"><div class="logo">▦</div><span>Kho riêng<span style="color:#6558e8">.</span></span></div>
+<nav class="nav"><button class="active" data-view="all">▦ &nbsp; Tất cả tệp</button><button data-view="images">▧ &nbsp; Hình ảnh</button><button data-view="videos">▷ &nbsp; Video</button></nav>
+<div class="side-note">Lưu trữ cá nhân đơn giản.<br>File được lưu an toàn trên Supabase, có thể truy cập sau khi đăng nhập.</div></aside>
+<main class="main"><header class="top"><div><div class="eyebrow">KHÔNG GIAN CỦA BẠN</div><h1 class="h1">Tệp của tôi</h1><p class="sub">Gọn gàng, riêng tư, đồng bộ qua tài khoản.</p></div><div class="actions"><button class="btn" id="newFolder">＋ Tạo thư mục</button><button class="btn primary" id="uploadBtn">↑ Tải tệp lên</button><input id="fileInput" type="file" accept="image/*,video/*" multiple hidden></div></header>
+<section class="stats"><div class="stat"><span class="stat-icon">▦</span><div class="stat-label">Tổng tệp</div><div class="stat-value" id="total">0</div></div><div class="stat"><span class="stat-icon">▧</span><div class="stat-label">Hình ảnh</div><div class="stat-value" id="imagesCount">0</div></div><div class="stat"><span class="stat-icon">▷</span><div class="stat-label">Video</div><div class="stat-value" id="videosCount">0</div></div></section>
+<div id="drop" class="drop"><div style="font-size:26px">⇧</div><div><strong>Kéo thả hình ảnh hoặc video vào đây</strong><div class="hint">Hoặc nhấn “Tải tệp lên” để chọn nhiều tệp cùng lúc · hỗ trợ tải tệp lớn theo giới hạn gói Supabase</div></div></div>
+<div class="toolbar"><div><div class="crumb" id="crumb">Tất cả tệp</div><div class="meta" id="countLabel">Đang tải dữ liệu…</div></div><input id="search" class="search" placeholder="⌕  Tìm tên tệp hoặc thư mục…"></div>
+<div class="grid" id="grid"></div><div class="footer">Tệp được lưu trong kho riêng trên Supabase. Chỉ tài khoản đã đăng nhập của bạn mới có quyền truy cập. Tải tệp lớn dùng truyền tải có thể tiếp tục khi mạng gián đoạn. Giới hạn dung lượng thực tế phụ thuộc gói và cài đặt Supabase; gói Free tối đa 50 MB/tệp. Chỉ hỗ trợ hình ảnh và video.</div>
+</main></div>
+<dialog id="folderDialog"><form method="dialog" id="folderForm"><h3>Tạo thư mục mới</h3><p>Đặt tên để sắp xếp các tệp của bạn.</p><input id="folderName" maxlength="80" placeholder="Ví dụ: Kỷ niệm, Du lịch…" required><div class="dialog-actions"><button class="btn" value="cancel">Hủy</button><button class="btn primary" value="ok">Tạo thư mục</button></div></form></dialog>
+
+<dialog id="authDialog" aria-labelledby="authTitle"><form id="authForm"><h3 id="authTitle">Đăng nhập kho riêng</h3><p id="authHelp">Đăng nhập để truy cập tệp cá nhân của bạn trên mọi thiết bị.</p><input id="authEmail" type="email" autocomplete="email" placeholder="Email" required><input id="authPassword" type="password" autocomplete="current-password" minlength="6" placeholder="Mật khẩu (ít nhất 6 ký tự)" required><div id="authError" style="color:#bd3545;font-size:12px;margin:0 0 12px"></div><div class="dialog-actions"><button class="btn" type="button" id="toggleAuth">Tạo tài khoản</button><button class="btn primary" type="submit" id="authSubmit">Đăng nhập</button></div></form></dialog>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/tus-js-client@4.2.3/dist/tus.min.js"></script>
+<script>
+(()=>{'use strict';
+const SUPABASE_URL='https://xypljfuxdokpefbxvrry.supabase.co';
+const SUPABASE_KEY='sb_publishable_J0G8LBq1f1p7NJguJF4S0A_J5lb7NbK';
+const supabase=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
+let user=null,items=[],view='all',folder=null,query='',signupMode=false,busy=false;
+const $=id=>document.getElementById(id);
+const fmt=n=>{if(n<1024)return n+' B';if(n<1048576)return (n/1024).toFixed(1)+' KB';if(n<1073741824)return (n/1048576).toFixed(1)+' MB';return (n/1073741824).toFixed(2)+' GB'};
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function toast(msg){const old=document.querySelector('.toast');if(old)old.remove();const e=document.createElement('div');e.className='toast';e.textContent=msg;document.body.append(e);setTimeout(()=>e.remove(),3000)}
+function isImage(x){return (x.mime_type||'').startsWith('image/')}function isVideo(x){return (x.mime_type||'').startsWith('video/')}
+function humanDate(t){return new Date(t).toLocaleDateString('vi-VN',{day:'2-digit',month:'2-digit',year:'numeric'})}
+function safeName(s){return s.replace(/[\/\\?#%:]/g,'_').replace(/^\.+/,'_').slice(0,180)||'tep'}
+async function requireUser(){if(!user)throw new Error('Vui lòng đăng nhập trước.')}
+async function refresh(){if(!user){items=[];render();return}const [f,files]=await Promise.all([supabase.from('folders').select('id,name,parent_id,created_at').order('created_at',{ascending:false}),supabase.from('files').select('id,name,folder_id,storage_path,mime_type,size_bytes,created_at').order('created_at',{ascending:false})]);if(f.error)throw f.error;if(files.error)throw files.error;items=[...(f.data||[]).map(x=>({...x,type:'folder',created:new Date(x.created_at).getTime()})),...(files.data||[]).map(x=>({...x,type:isImage(x)?'image':'video',mime:x.mime_type,size:x.size_bytes,created:new Date(x.created_at).getTime()}))];render()}
+function parentName(id){return items.find(x=>x.id===id)?.name||'Thư mục'}
+async function signedUrl(path,download=false){const {data,error}=await supabase.storage.from('personal-files').createSignedUrl(path,300,download?{download:true}:{});if(error)throw error;return data.signedUrl}
+async function render(){document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===view));$('crumb').textContent=folder===null?({all:'Tất cả tệp',images:'Hình ảnh',videos:'Video'}[view]||'Tất cả tệp'):parentName(folder);
+const files=items.filter(x=>x.type!=='folder'),images=files.filter(isImage),videos=files.filter(isVideo);$('total').textContent=files.length;$('imagesCount').textContent=images.length;$('videosCount').textContent=videos.length;
+let list=items.filter(x=>(x.folder_id??x.parent_id??null)===(folder===null?null:folder));if(view==='images')list=list.filter(isImage);if(view==='videos')list=list.filter(isVideo);if(query)list=list.filter(x=>x.name.toLowerCase().includes(query.toLowerCase()));list.sort((a,b)=>(a.type==='folder'?-1:0)-(b.type==='folder'?-1:0)||b.created-a.created);
+$('countLabel').textContent=list.length+' mục';const grid=$('grid');grid.innerHTML='';
+if(folder!==null){const back=document.createElement('article');back.className='item';back.innerHTML='<div class="preview"><span class="filetype">↰</span></div><div class="itembody"><div class="filename">Quay lại</div><div class="meta">Thư mục cha</div><div class="itemactions"><button class="smallbtn">← Quay lại</button></div></div>';back.querySelector('button').onclick=()=>{const f=items.find(x=>x.id===folder);folder=f?.parent_id||null;render()};grid.append(back)}
+if(!list.length){const e=document.createElement('div');e.className='empty';e.innerHTML='<div class="big">▧</div><strong>Chưa có tệp ở đây</strong><div style="font-size:13px;margin-top:7px">Tải hình ảnh, video lên hoặc tạo thư mục mới để bắt đầu.</div>';grid.append(e)}
+for(const x of list){const el=document.createElement('article');el.className='item';const preview=document.createElement('div');preview.className='preview';
+if(x.type==='folder')preview.innerHTML='<span class="foldertype">📁</span>';else{try{const url=await signedUrl(x.storage_path);if(isImage(x)){const im=document.createElement('img');im.src=url;im.alt=x.name;preview.append(im)}else{const v=document.createElement('video');v.src=url;v.muted=true;v.preload='metadata';preview.append(v)}}catch(e){preview.innerHTML='<span class="filetype">▤</span>'}}
+const body=document.createElement('div');body.className='itembody';body.innerHTML='<div class="filename" title="'+esc(x.name)+'">'+esc(x.name)+'</div><div class="meta">'+(x.type==='folder'?'Thư mục':fmt(Number(x.size||0))+' · '+humanDate(x.created))+'</div><div class="itemactions"></div>';const acts=body.querySelector('.itemactions');
+if(x.type==='folder'){const open=document.createElement('button');open.className='smallbtn';open.textContent='Mở thư mục';open.onclick=()=>{folder=x.id;view='all';render()};acts.append(open)}
+else{const down=document.createElement('button');down.className='smallbtn';down.textContent='↓ Tải xuống';down.onclick=async()=>{try{const url=await signedUrl(x.storage_path,true);const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';a.download=x.name;document.body.append(a);a.click();a.remove()}catch(e){toast('Lỗi tải xuống: '+e.message)}};acts.append(down)}
+const del=document.createElement('button');del.className='smallbtn del';del.textContent='Xóa';del.onclick=async()=>{if(!confirm('Bạn chắc chắn muốn xóa "'+x.name+'"?'+(x.type==='folder'?' Các tệp bên trong cũng sẽ bị xóa.':'')))return;try{await deleteTree(x);await refresh();toast('Đã xóa')}catch(e){toast('Không thể xóa: '+e.message)}};acts.append(del);el.append(preview,body);grid.append(el)}
+}
+async function deleteTree(item){if(item.type==='folder'){const children=items.filter(x=>(x.folder_id??x.parent_id??null)===item.id);for(const child of children)await deleteTree(child);const r=await supabase.from('folders').delete().eq('id',item.id);if(r.error)throw r.error}else{const s=await supabase.storage.from('personal-files').remove([item.storage_path]);if(s.error)throw s.error;const r=await supabase.from('files').delete().eq('id',item.id);if(r.error)throw r.error}}
+async function uploadOne(path,file){
+  if(file.size <= 6*1024*1024){
+    const {error}=await supabase.storage.from('personal-files').upload(path,file,{contentType:file.type,upsert:false});
+    if(error)throw error;
+    return;
+  }
+  const {data:{session},error:sessionError}=await supabase.auth.getSession();
+  if(sessionError)throw sessionError;
+  if(!session)throw new Error('Phiên đăng nhập đã hết hạn. Vui lòng đăng nhập lại.');
+  await new Promise((resolve,reject)=>{
+    const upload=new tus.Upload(file,{
+      endpoint:'https://xypljfuxdokpefbxvrry.storage.supabase.co/storage/v1/upload/resumable',
+      retryDelays:[0,3000,5000,10000,20000],
+      chunkSize:6*1024*1024,
+      headers:{authorization:'Bearer '+session.access_token,apikey:SUPABASE_KEY,'x-upsert':'false'},
+      uploadDataDuringCreation:true,
+      removeFingerprintOnSuccess:true,
+      metadata:{bucketName:'personal-files',objectName:path,contentType:file.type||'application/octet-stream',cacheControl:'3600'},
+      onError:reject,
+      onProgress:(sent,total)=>{const pct=Math.floor(sent/total*100);$('countLabel').textContent='Đang tải '+file.name+' · '+pct+'%';},
+      onSuccess:resolve
+    });
+    upload.findPreviousUploads().then(previous=>{if(previous.length)upload.resumeFromPreviousUpload(previous[0]);upload.start()}).catch(reject);
+  });
+}
+async function upload(files){
+  if(!user){toast('Vui lòng đăng nhập');return}
+  let ok=0;
+  for(const f of files){
+    if(!f.type.startsWith('image/')&&!f.type.startsWith('video/')){toast(f.name+': chỉ hỗ trợ hình ảnh và video');continue}
+    try{
+      const path=user.id+'/'+crypto.randomUUID()+'/'+safeName(f.name);
+      await uploadOne(path,f);
+      const row=await supabase.from('files').insert({owner_id:user.id,folder_id:folder,name:f.name,storage_path:path,mime_type:f.type,size_bytes:f.size});
+      if(row.error){await supabase.storage.from('personal-files').remove([path]);throw row.error}
+      ok++;
+    }catch(e){console.error(e);toast('Không tải được '+f.name+': '+(e.message||'Lỗi không xác định'))}
+  }
+  await refresh();
+  if(ok)toast('Đã tải lên '+ok+' tệp');
+}
+$('uploadBtn').onclick=()=>$('fileInput').click();$('fileInput').onchange=e=>{upload([...e.target.files]);e.target.value=''};
+$('newFolder').onclick=async()=>{if(!user){toast('Vui lòng đăng nhập');return}const name=prompt('Tên thư mục mới:');if(!name||!name.trim())return;try{const r=await supabase.from('folders').insert({name:name.trim(),owner_id:user.id,parent_id:folder});if(r.error)throw r.error;await refresh();toast('Đã tạo thư mục')}catch(e){toast('Không tạo được thư mục: '+e.message)}};
+document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{view=b.dataset.view;folder=null;render()});$('search').oninput=e=>{query=e.target.value.trim();render()};
+const drop=$('drop');drop.onclick=()=>$('fileInput').click();['dragenter','dragover'].forEach(n=>drop.addEventListener(n,e=>{e.preventDefault();drop.classList.add('drag')}));['dragleave','drop'].forEach(n=>drop.addEventListener(n,e=>{e.preventDefault();drop.classList.remove('drag')}));drop.addEventListener('drop',e=>upload([...e.dataTransfer.files]));
+$('toggleAuth').onclick=()=>{signupMode=!signupMode;$('authTitle').textContent=signupMode?'Tạo tài khoản kho riêng':'Đăng nhập kho riêng';$('authSubmit').textContent=signupMode?'Đăng ký':'Đăng nhập';$('toggleAuth').textContent=signupMode?'Đã có tài khoản? Đăng nhập':'Tạo tài khoản';$('authHelp').textContent=signupMode?'Tạo tài khoản bằng email và mật khẩu.':'Đăng nhập để truy cập tệp cá nhân của bạn trên mọi thiết bị.';$('authError').textContent=''};
+$('authForm').onsubmit=async e=>{e.preventDefault();$('authError').textContent='';$('authSubmit').disabled=true;const email=$('authEmail').value.trim(),password=$('authPassword').value;try{const result=signupMode?await supabase.auth.signUp({email,password,options:{emailRedirectTo:window.location.origin+window.location.pathname}}):await supabase.auth.signInWithPassword({email,password});if(result.error)throw result.error;if(signupMode&&!result.data.session){$('authError').textContent='Đã tạo yêu cầu đăng ký. Hãy kiểm tra email để xác nhận, sau đó đăng nhập.';return}if(result.data.user){user=result.data.user;$('authDialog').close();await refresh();toast('Đăng nhập thành công')}}catch(err){$('authError').textContent=err.message||'Có lỗi xảy ra'}finally{$('authSubmit').disabled=false}};
+const actions=document.querySelector('.actions');const logout=document.createElement('button');logout.className='btn';logout.textContent='Đăng xuất';logout.hidden=true;logout.onclick=async()=>{await supabase.auth.signOut();user=null;items=[];render();$('authDialog').showModal();logout.hidden=true};actions.prepend(logout);
+supabase.auth.onAuthStateChange((_event,session)=>{user=session?.user||null;logout.hidden=!user;if(user){$('authDialog').close();setTimeout(()=>refresh().catch(e=>toast('Lỗi tải dữ liệu: '+e.message)),0)}else{items=[];render();if(!$('authDialog').open)$('authDialog').showModal()}});
+supabase.auth.getSession().then(({data})=>{user=data.session?.user||null;logout.hidden=!user;if(user)refresh().catch(e=>toast('Lỗi tải dữ liệu: '+e.message));else {if(!$('authDialog').open)$('authDialog').showModal()}});
+})();
+</script></body></html>
