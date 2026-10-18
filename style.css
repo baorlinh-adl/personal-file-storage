@@ -1,0 +1,23 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,sans-serif}
+body{
+height:100vh;display:flex;justify-content:center;align-items:center;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+.card{
+width:380px;padding:30px;border-radius:25px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);text-align:center;
+}
+.avatar{
+width:130px;height:130px;border-radius:50%;
+border:3px solid white;
+}
+h1{margin-top:15px;color:white}
+.desc{color:#cbd5e1;margin:15px 0 25px}
+.btn{
+display:block;text-decoration:none;color:white;
+padding:14px;margin:10px 0;border-radius:12px;
+background:rgba(255,255,255,.1);
+transition:.3s;
+}
+.btn:hover{transform:translateY(-3px);background:rgba(255,255,255,.2)}
